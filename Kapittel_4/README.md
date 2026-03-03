@@ -11,12 +11,30 @@ I dette eksempelet tar vi utgangspunkt i datasettet nedenfor, og koden som blir 
 
 Når vi skal gjøre anslag om dette datasettet er normalfordelt, lager vi først et program som leser datafilen, før alle dataene ordnes i en liste. Dataene i listen blir sortert, før vi finner prosentilene. Datasettet inneholder $n$ = 16 datapunkter, så den første prosentilen vil være 
 
-$$ [100 * (1 - 0.5)/16 ] = 0.31 = 3.1 % $$ 
+$$ 1ste prosentil = [100 * (1 - 0.5)/16 ] = 0.31 $$ 
 
 Altså vil 3.1% av måledataene være under den 1ste observasjonen. Tilsvarende vil 9.4% av måledataene ha en lavere verdi enn den andre observasjonen osv. 
 
 Vi ønsker å vite om vi kan tilnærme dette med den kummulative fordelingen $cdf$ til normalfordelingen. 
 
+Dette gjøres ved å se i en normalfordelingstabell. Da vi er under 0.5-prosentilen, bruker vi at $\Phi (-z)$ = 1 - $\Phi (z)$ . Dette gir
+
+
+$$ \Phi (-z) = 1 - \Phi(z) = 0.031 \Leftrightarrow \Phi(z) = 0.969 $$
+
+
+Av standard normalfordelingstabell ser vi at dette tilsvarer z = 1.89 , slik at prosentilverdien fra normalfordelingstabellen vi er ute etter er -1.89. Dette gjøres for alle verdiene fra de observerte dataene. For det første eksempelet har vi: 
+
+$$ P(-1.89 < z) = \Phi(-1.89) = 0.031 $$
+
+Dette gjøres for alle de observerte verdiene for prosentilene med komandoen 
+
+
+$$ z_verdier = [norm.ppf(p) for p in prosentiler] $$
+
+Dette gir følgene sammenheng mellom z-prosentiler fra normalfordelingtabellen og prosentandelen av målingene som er under den $i$te observasjonen. 
+
+![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/p_riktig.png)
 
 
 De ulike prosentilene fra datasettet angir hvor mange prosent av  måledataene som ligger under den gitte verdien. 
