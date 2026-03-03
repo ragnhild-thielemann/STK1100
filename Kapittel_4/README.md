@@ -30,12 +30,31 @@ $$ P(-1.89 < z) = \Phi(-1.89) = 0.031 $$
 Dette gjøres for alle de observerte verdiene for prosentilene med komandoen 
 
 
-$$ z_verdier = [norm.ppf(p) for p in prosentiler] $$
+z_verdier = [norm.ppf(p) for p in prosentiler] 
 
 Dette gir følgene sammenheng mellom z-prosentiler fra normalfordelingtabellen og prosentandelen av målingene som er under den $i$te observasjonen. 
 
 ![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/p_riktig.png)
 
+
+z-prosentiler  prosentandel
+-----------------------------
+  -1.863           3.1 %
+  -1.318           9.4 %
+  -1.010          15.6 %
+  -0.776          21.9 %
+  -0.579          28.1 %
+  -0.402          34.4 %
+  -0.237          40.6 %
+  -0.078          46.9 %
+   0.078          53.1 %
+   0.237          59.4 %
+   0.402          65.6 %
+   0.579          71.9 %
+   0.776          78.1 %
+   1.010          84.4 %
+   1.318          90.6 %
+   1.863          96.9 %
 
 De ulike prosentilene fra datasettet angir hvor mange prosent av  måledataene som ligger under den gitte verdien. 
 Disse prosentilene kan vi plotte mot prosentilene fra standard normalfordeling. Dersom de er linjært fordelt, er det å anta at datasettet vårt er normalfordelt. 
