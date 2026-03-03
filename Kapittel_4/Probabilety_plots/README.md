@@ -34,14 +34,12 @@ z_verdier = [norm.ppf(p) for p in prosentiler]
 
 Dette gir følgene sammenheng mellom z-prosentiler fra normalfordelingtabellen og prosentandelen av målingene som er under den $i$te observasjonen. 
 
-![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/p_riktig.png)
+![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/z_pen.png)
 
 
-Dersom måledataene våre kan tilnærmes med normalfordelingen, vil vi ha en linjær sammenheng mellom prosentilene fra normalfordelingen og prosentilene fra måledataene. Derfor plotter vi disse to datasettene mot hverandre, som gir følgene plott
+Dersom måledataene våre kan tilnærmes med normalfordelingen, vil vi ha en linjær sammenheng mellom prosentilene fra normalfordelingen og prosentilene fra måledataene. Derfor plotter vi prosentilene fra normalfordelingen langs y-aksen, og måledataene langs x-aksen. Dersom disse har en linjær sammenheng, kan vi slutte at måledataene våre er normalfordelt. 
 
-![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/riktig.png)
+![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/plott_1.png)
 
-Da det er en linjær sammenheng mellom z-prosentilene fra normalfordelingstabellen og prosentilene fra måledataene, kan vi konkludere med at de observerte dataene er normalfordelt. 
-
-
+Av figuren ser vi at det er en linjær sammenheng mellom de observerte dataene og de standasiserte z_prosentilene fra normalfordelingen. Dermed kan vi slutte at de observerte verdiene kan tilnærmes med normalfordelingen. 
 
