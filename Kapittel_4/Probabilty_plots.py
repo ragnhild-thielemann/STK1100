@@ -35,7 +35,7 @@ y_verdier = lambda t : -2 + 4*t
 plt.plot(prosentiler,z_verdier,".")
 plt.ylabel("Stanariserte verdier for z")
 plt.xlabel("Prosentiler fra måledateene")
-plt.plot(x_verdier,y_verdier(x_verdier), label = "y=x", color = "hotpink")
+plt.plot(x_verdier,y_verdier(x_verdier), label = "y= 4x -2", color = "hotpink")
 plt.legend()
 plt.title("sammenheng mellom prosentiler fra normalfordelingen og reele måledata")
 plt.show()
