@@ -4,7 +4,7 @@
 #### Definisjon av prosentiler fra reelt datasett
 Vi ser på prosentiler av datasettet vi jobber med. Vi ordner de $n$ observasjonene fra minst til størst. Da vil den $i$ te minste observasjonen i listen være **[100  ( $i$ - .5)/n ] ** prosentilen. 
 
-I dette eksempelet tar vi utgangspunkt i datasettet nedenfor, og koden som blir beskrevet er skrevet i [scriptet Probability_plots.py](https://github.com/ragnhild-thielemann/STK1100/blob/main/Kapittel_4/Probability_plots.py)
+I dette eksempelet tar vi utgangspunkt i datasettet nedenfor, og koden som blir beskrevet er skrevet i [scriptet Probability_plots.py](https://github.com/ragnhild-thielemann/STK1100/blob/main/Kapittel_4/Probability_plots/Probability_plots.py)
 
 
 ![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/data.png)
@@ -37,8 +37,7 @@ Dette gir følgene sammenheng mellom z-prosentiler fra normalfordelingtabellen o
 ![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/p_riktig.png)
 
 
-
-For å finne ut om måledataene våre er tilnærmet normalfordelt, vil det være en linjær sammenheng mellom prosentilene fra normalfordelingen og prosentilene fra måledataene. Derfor plotter vi disse to datasettene mot hverandre, som gir følgene plott
+Dersom måledataene våre kan tilnærmes med normalfordelingen, vil vi ha en linjær sammenheng mellom prosentilene fra normalfordelingen og prosentilene fra måledataene. Derfor plotter vi disse to datasettene mot hverandre, som gir følgene plott
 
 ![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/riktig.png)
 
