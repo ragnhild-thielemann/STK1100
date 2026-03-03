@@ -32,7 +32,7 @@ Dette gjøres for alle de observerte verdiene for prosentilene med komandoen
 
 z_verdier = [norm.ppf(p) for p in prosentiler] 
 
-Dette gir følgene sammenheng mellom z-prosentiler fra normalfordelingtabellen og prosentandelen av målingene som er under den $i$te observasjonen. 
+Dette gir følgene sammenheng mellom z-prosentiler fra normalfordelingtabellen og prosentandelen av målingene som er under den $i$ te observasjonen. 
 
 ![ya](https://github.com/ragnhild-thielemann/STK1100/blob/main/images/z_pen.png)
 
